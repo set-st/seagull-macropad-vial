@@ -23,7 +23,7 @@ static void render_layer_info(void) {
     else if (layer == 1) oled_write_P(raise_layer, false);
     else oled_write_P(default_layer, false);
 
-    const char *layer_names[] = {"MACRO", "NUM  ", "GAMES", "SETGS"};    
+    const char *layer_names[] = {"NUM  ", "MACRO", "GAMES", "SETGS"};    
     oled_set_cursor(0, 5);
     if (layer < 4) oled_write(layer_names[layer], false);
 }
